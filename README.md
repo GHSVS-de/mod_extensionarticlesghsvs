@@ -1,5 +1,5 @@
 # mod_extensionarticlesghsvs
-- Joomla site module. Collects and displays articles that have a key 'extension' in database table '#__bs3ghsvs_article'. Needs class 'ArticleHelper' of 'plg_system_bs3ghsvs'.
+Joomla site module. Collects and displays articles that have a key 'extension' in database table '#__bs3ghsvs_article'. Needs class 'ArticleHelper' of 'plg_system_bs3ghsvs'.
 
 -----------------------------------------------------
 
@@ -8,8 +8,8 @@
 - `cd /mnt/z/git-kram/mod_extensionarticlesghsvs`
 
 ## node/npm updates/installation
-- `npm run g-npm-update-check` or (faster) `ncu`
-- `npm run g-ncu-override-json` (if needed) or (faster) `ncu -u`
+- `npm run updateCheck` or (faster) `npm outdated`
+- `npm run update` (if needed) or (faster) `npm update --save-dev`
 - `npm install` (if needed)
 
 ## Build installable ZIP package

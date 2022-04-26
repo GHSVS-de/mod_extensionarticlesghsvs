@@ -41,6 +41,14 @@
 
 		<note>
 			<item><![CDATA[
+				Joomla-Target-Platform: {{targetplatform}}
+			]]></item>
+
+			<item><![CDATA[
+				Uses: {{uses}}
+			]]></item>
+
+			<item><![CDATA[
 				Last tests: {{lastTests}}
 			]]></item>
 
@@ -65,6 +73,12 @@
 			<item><![CDATA[
 				Checksum: <span style="word-wrap:anywhere;">{{checksumEntity}}</span>
 			]]></item>
+
+			<item><![CDATA[
+				Contained packages (sub Joomla extensions):
+				{{thisPackagesHtml}}
+			]]></item>
+
 		</note>
 
 		<remove>
@@ -72,6 +86,10 @@
 		</remove>
 
 		<requirement>
+			<entry><![CDATA[
+				Requires: {{requires}}
+			]]></entry>
+
 			<entry><![CDATA[
 				minimumPhp: {{minimumPhp}}
 			]]></entry>

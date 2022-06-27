@@ -13,7 +13,9 @@
 			"3.*",
 			"4.*"
 		],
-		"namespace": ""
+		"namespace": "Joomla\\Module\\ExtensionArticlesGhsvs",
+		"xmlserverComment": "Der Grundpfad zu update.xml etc. Falls abweichend vom Default in replaceXml.",
+		"xmlserver": ""
 	},
 	"releaseTxt": {
 		"title": "Joomla site module mod_extensionArticlesGhsvs",
@@ -27,7 +29,8 @@
 		"docsDE": "",
 		"docsEN": "",
 		"lastTests": [
-			"PHP 8",
+			"PHP 8.0",
+			"PHP 8.1",
 			"Joomla 3.10",
 			"Joomla 4.1"
 		]
@@ -42,13 +45,11 @@
 	"copyright": "(C) 2021, G@HService Berlin Neukölln, Volkmar Volli Schlothauer (ghsvs.de)",
 	"author": {
 		"name": "G@HService Berlin Neukölln, Volkmar Volli Schlothauer",
-		"email": "",
 		"url": "https://ghsvs.de"
 	},
 	"contributors": [
 		{
 			"name": "G@HService Berlin Neukölln, Volkmar Volli Schlothauer",
-			"email": "",
 			"url": "https://ghsvs.de"
 		}
 	],
@@ -68,16 +69,11 @@
 		"url": "https://github.com/GHSVS-de/mod_extensionarticlesghsvs.git"
 	},
 	"scripts": {
-		"g-build": "node build.js",
+		"build": "node build.js",
 		"updateCheck": "npm outdated",
 		"update": "npm update --save-dev"
 	},
 	"dependencies": {},
-	"devDependencies": {
-		"adm-zip": "^0.5.9",
-		"picocolors": "^1.0.0",
-		"fs-extra": "^10.1.0",
-		"rimraf": "^3.0.2"
-	},
+	"devDependencies": {},
 	"browserslist": []
 }

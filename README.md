@@ -4,6 +4,9 @@ Joomla site module. Collects and displays articles that have a key 'extension' i
 -----------------------------------------------------
 
 # My personal build procedure (WSL 1, Debian, Win 10)
+
+**@Since versions greater than v2021.11.15 Build procedure uses local repo fork of https://github.com/GHSVS-de/buildKramGhsvs**
+
 - Prepare/adapt `./package.json`.
 - `cd /mnt/z/git-kram/mod_extensionarticlesghsvs`
 
@@ -12,6 +15,13 @@ Joomla site module. Collects and displays articles that have a key 'extension' i
 - `npm run update` (if needed) or (faster) `npm update --save-dev`
 - `npm install` (if needed)
 
+## PHP Codestyle
+If you think it's worth it.
+- `cd /mnt/z/git-kram/php-cs-fixer-ghsvs`
+- `npm run mod_extensionarticlesghsvsDry` (= dry test run).
+- `npm run mod_extensionarticlesghsvs` (= cleans code).
+- `cd /mnt/z/git-kram/mod_extensionarticlesghsvs` (back to this repo).
+
 ## Build installable ZIP package
 - `node build.js`
 - New, installable ZIP is in `./dist` afterwards.
@@ -19,5 +29,5 @@ Joomla site module. Collects and displays articles that have a key 'extension' i
 
 ### For Joomla update and changelog server
 - Create new release with new tag.
-- - See release description in `dist/release.txt`.
+  - See release description in `dist/release.txt`.
 - Extracts(!) of the update and changelog XML for update and changelog servers are in `./dist` as well. Copy/paste and necessary additions.

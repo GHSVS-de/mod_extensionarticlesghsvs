@@ -4,8 +4,6 @@ namespace Joomla\Module\ExtensionArticlesGhsvs\Site\Helper;
 
 \defined('_JEXEC') or die;
 
-use Joomla\CMS\Uri\Uri;
-
 abstract class ExtensionArticlesGhsvsHelper
 {
 	public static function getList()
@@ -21,6 +19,7 @@ abstract class ExtensionArticlesGhsvsHelper
 		}
 
 		$list = \Bs3ghsvsArticle::getArticlesWithExtraFieldType('extension');
+
 		return $list;
 	}
 }

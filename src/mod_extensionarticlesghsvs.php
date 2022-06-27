@@ -5,7 +5,10 @@ if (version_compare(JVERSION, '4', 'lt'))
 {
 	JLoader::registerNamespace(
 		'Joomla\Module\ExtensionArticlesGhsvs\Site',
-		__DIR__ . '/src', false, false, 'psr4'
+		__DIR__ . '/src',
+		false,
+		false,
+		'psr4'
 	);
 }
 
@@ -14,5 +17,7 @@ use Joomla\Module\ExtensionArticlesGhsvs\Site\Helper\ExtensionArticlesGhsvsHelpe
 
 $list = ExtensionArticlesGhsvsHelper::getList();
 
-require ModuleHelper::getLayoutPath('mod_extensionarticlesghsvs',
-	$params->get('layout', 'default'));
+require ModuleHelper::getLayoutPath(
+	'mod_extensionarticlesghsvs',
+	$params->get('layout', 'default')
+);

@@ -39,14 +39,7 @@ const Manifest = `${__dirname}/package/${manifestFileName}`;
 	to = `./package`;
 	await helper.copy(from, to)
 
-	to = './dist';
-	if (!(await fse.exists(to)))
-	{
-		await fse.mkdir(to
-		).then(
-			answer => console.log(pc.yellow(pc.bold(`Created ${to}.`)))
-		);
-  }
+	await helper.mkdir('./dist');
 
 	const zipFilename = `${name}-${version}.zip`;
 

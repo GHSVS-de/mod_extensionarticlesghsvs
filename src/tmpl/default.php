@@ -4,7 +4,8 @@ defined('_JEXEC') or die;
 use Joomla\CMS\Layout\LayoutHelper;
 
 if (!empty($list))
-{ ?>
+{
+	$list = \Joomla\Utilities\ArrayHelper::sortObjects($list, 'created', -1); ?>
 <div class="mod_extensionarticlesghsvs">
 	<div class="items-intro row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-2">
 		<?php foreach ($list as $item)

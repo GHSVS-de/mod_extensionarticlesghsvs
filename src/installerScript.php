@@ -12,7 +12,9 @@ class mod_extensionArticlesGhsvsInstallerScript extends InstallerScript
 	 * @var    array
 	 * @since  2.0
 	 */
-	protected $deleteFiles = [];
+	protected $deleteFiles = [
+		'/modules/mod_extensionarticlesghsvs/mod_extensionarticlesghsvs.php'
+	];
 
 	/**
 	 * A list of folders to be deleted with method removeFiles().

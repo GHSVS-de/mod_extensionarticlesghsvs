@@ -2,18 +2,17 @@
 	"name": "mod_extensionarticlesghsvs",
 	"nameReal": "mod_extensionarticlesghsvs",
 	"filename": "mod_extensionarticlesghsvs",
-	"version": "2021.11.15",
-	"versionCompare": "2021.07.17",
+	"version": "2023.02.04",
+	"versionCompare": "2021.11.15",
 	"update": {
 		"type": "module",
 		"folder": "",
 		"client": "site",
 		"tag": "stable",
 		"targetplatform": [
-			"3.*",
-			"4.*"
+			"4.[23456789]"
 		],
-		"namespace": "Joomla\\Module\\ExtensionArticlesGhsvs",
+		"namespace": "GHSVS\\Module\\ExtensionArticlesGhsvs",
 		"xmlserverComment": "Der Grundpfad zu update.xml etc. Falls abweichend vom Default in replaceXml.",
 		"xmlserver": ""
 	},
@@ -31,13 +30,12 @@
 		"lastTests": [
 			"PHP 8.0",
 			"PHP 8.1",
-			"Joomla 3.10",
-			"Joomla 4.1"
+			"Joomla 4.2.7"
 		]
 	},
-	"minimumPhp": "7.4.0",
+	"minimumPhp": "8.0",
 	"maximumPhp": "8.99999.99999",
-	"minimumJoomla": "3.10.0",
+	"minimumJoomla": "4.2.7",
 	"maximumJoomla": "4.9999.9999",
 	"allowDowngrades": "1",
 	"creationDate": "2021-07-15",

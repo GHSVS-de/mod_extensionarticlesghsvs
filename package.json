@@ -30,12 +30,12 @@
 		"lastTests": [
 			"PHP 8.0",
 			"PHP 8.1",
-			"Joomla 4.2"
+			"Joomla 4.2.7"
 		]
 	},
 	"minimumPhp": "8.0",
 	"maximumPhp": "8.99999.99999",
-	"minimumJoomla": "4.2.0",
+	"minimumJoomla": "4.2.7",
 	"maximumJoomla": "4.9999.9999",
 	"allowDowngrades": "1",
 	"creationDate": "2021-07-15",

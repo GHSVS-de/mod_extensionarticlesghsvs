@@ -3,35 +3,47 @@ defined('_JEXEC') or die;
 
 use Joomla\CMS\Layout\LayoutHelper;
 
+/*
+Available variables from helper:
+- String $list
+- String $modId
+- Integer $countItems
+*/
+
 if (!empty($list))
 {
-	$list = \Joomla\Utilities\ArrayHelper::sortObjects($list, 'created', -1); ?>
-<div class="mod_extensionarticlesghsvs">
+	$counter = 0;
+?>
+<div id="<?php echo $modId; ?>" class="mod_extensionarticlesghsvs">
 	<div class="items-intro row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-2">
 		<?php foreach ($list as $item)
 {
+	if (++$counter > $countItems)
+	{
+		break;
+	}
+
 	// Block readmore shit.
 	$params->set('access-view', 1);
 
 	$infoBlock = trim(LayoutHelper::render(
 		'ghsvs.info_block.block',
 		[
-					'item' => $item,
-					'params' => $params,
-				]
+			'item' => $item,
+			'params' => $params,
+		]
 	));
 
 	$cardReadmore = LayoutHelper::render(
 		'ghsvs.readmore',
 		[
-						'item' => $item,
-						'params' => $params,
-						'link' => $item->link,
-					]
+			'item' => $item,
+			'params' => $params,
+			'link' => $item->link,
+		]
 	);
 
-	$cardText = '<p>' . ($item->fieldData->get('description')
-				?: $item->metadesc) . '</p>'; ?>
+	$cardText = '<p>' . ($item->fieldData->get('description') ?: $item->metadesc) . '</p>'; ?>
 		<div class="col">
 			<div class="card h-100 border-danger">
 				<div class="card-body">
@@ -46,8 +58,6 @@ if (!empty($list))
 				} ?>
 			</div><!--/card-->
 		</div><!--/col-->
-
-
 		<?php
 } ?>
 	</div><!--/items-intro row-->

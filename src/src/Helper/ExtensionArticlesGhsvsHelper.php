@@ -5,6 +5,7 @@ namespace GHSVS\Module\ExtensionArticlesGhsvs\Site\Helper;
 \defined('_JEXEC') or die;
 
 use Joomla\Utilities\ArrayHelper;
+use Joomla\Registry\Registry;
 
 class ExtensionArticlesGhsvsHelper
 {

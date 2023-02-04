@@ -12,7 +12,7 @@
 		"targetplatform": [
 			"4.[23456789]"
 		],
-		"namespace": "Joomla\\Module\\ExtensionArticlesGhsvs",
+		"namespace": "GHSVS\\Module\\ExtensionArticlesGhsvs",
 		"xmlserverComment": "Der Grundpfad zu update.xml etc. Falls abweichend vom Default in replaceXml.",
 		"xmlserver": ""
 	},

@@ -4,7 +4,7 @@ const path = require('path');
 /* Configure START */
 const pathBuildKram = path.resolve("../buildKramGhsvs");
 const updateXml = `${pathBuildKram}/build/update.xml`;
-const changelogXml = `${pathBuildKram}/build/changelog.xml`;
+// const changelogXml = `${pathBuildKram}/build/changelog.xml`;
 const releaseTxt = `${pathBuildKram}/build/release.txt`;
 /* Configure END */
 

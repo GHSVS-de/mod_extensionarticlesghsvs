@@ -5,6 +5,7 @@
 	"version": "2023.02.04",
 	"versionCompare": "2021.11.15",
 	"update": {
+		"infourl": "https://github.com/GHSVS-de/mod_extensionarticlesghsvs{{thisRelease}}",
 		"type": "module",
 		"folder": "",
 		"client": "site",

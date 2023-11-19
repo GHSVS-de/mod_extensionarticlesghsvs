@@ -20,17 +20,12 @@ class ExtensionArticlesGhsvsHelper
 
 	private function getList(Registry $params) : array
 	{
-		\JLoader::register(
-			'Bs3ghsvsArticle',
-			JPATH_PLUGINS . '/system/bs3ghsvs/Helper/ArticleHelper.php'
-		);
-
-		if (!class_exists('\Bs3ghsvsArticle'))
+		if (!class_exists('\GHSVS\Plugin\System\Bs3Ghsvs\Helper\Bs3GhsvsArticleHelper'))
 		{
 			return [];
 		}
 
-		$list = \Bs3ghsvsArticle::getArticlesWithExtraFieldType('extension');
+		$list = \GHSVS\Plugin\System\Bs3Ghsvs\Helper\Bs3GhsvsArticleHelper::getArticlesWithExtraFieldType('extension');
 
 		if (count($list))
 		{
